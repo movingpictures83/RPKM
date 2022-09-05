@@ -1,0 +1,2 @@
+Prefix plugins/RPKM/example
+Plugin RPKM inputfile parameters.txt outputfile output.png
