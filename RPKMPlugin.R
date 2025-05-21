@@ -33,6 +33,7 @@ gplot<-ggplot(assay, aes(fill=factor(ABR, levels=levels_updated), y=RPKM, x=Grou
   geom_bar(position="stack", stat="identity") 
 gplot
 ggsave(outputfile, plot=gplot, device = "png", dpi = 700)
+write.csv(assay$RPKN, paste(outputfile, "csv", sep="."))
 }
 
 
